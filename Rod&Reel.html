@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="viewport" content="width=divice-width, initial-scale=1.0">
+<title>Rod & Reel</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/FHD-style.css" media="screen and (min-width: 1600px)">
+<link rel="stylesheet" href="css/HD-style.css" media="screen and (min-width: 1280px) and (max-width: 1599px)">
+<link rel="stylesheet" href="css/Tablet(ipadPro)-style.css" media="screen and (min-width: 1000px) and (max-width: 1279px)">
+<link rel="stylesheet" href="css/Tablet(ipad etc)-style.css" media="screen and (min-width: 651px) and (max-width: 999px)">
+<link rel="stylesheet" href="css/Mobile-style.css" media="screen and (min-width: 320px) and (max-width: 650px)">
+<script src="js/jquery-2.1.1.min.js"></script>
+<script src="js/custom.js"></script>
+</head>
+<body>
+    <header id="hd1">
+        <div>
+            <a href="index.html"><img src="imgs/fhd-sub-logo3w.png" alt="투명로고"></a>
+            <a href="index.html"><img src="imgs/tb-sub-logog.png" alt="약식투명로고"></a>
+        </div>
+        <input type="checkbox" id="trigger">
+        <label for="trigger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Rod & Reel</a>
+                    <ul id="sub-menu">
+                        <li><a href="#">Freshwater</a></li>
+                        <li><a href="#">Sea</a></li>
+                        <li><a href="#">Reel</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Line & Hook</a></li>
+                <li><a href="#">Bait & Float</a></li>
+                <li><a href="#">Etc equip</a></li>
+            </ul>
+        </nav>
+        <ul>
+            <li>
+                <a href="#">로그인</a>
+                <a href="#"><i class="fa fa-user"></i></a>
+            </li>
+            <li>
+                <a href="#">회원가입</a>
+                <a href="#"><i class="fa fa-lock"></i></a>
+            </li>
+        </ul>
+    </header><!-- #hd1 end-->
+
+    <header id="hd2">
+        <div>
+            <a href="index.html"><img src="imgs/fhd-sub-logo3b.png" alt="색상로고"></a>
+            <a href="index.html"><img src="imgs/tb-sub-logob.png" alt="약식투명로고"></a>
+        </div>
+        <input type="checkbox" id="trigger-black">
+        <label for="trigger-black">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="#">Rod & Reel</a>
+                    <ul id="sub-menu">
+                        <li><a href="#">Freshwater</a></li>
+                        <li><a href="#">Sea</a></li>
+                        <li><a href="#">reel</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Line & Hook</a></li>
+                <li><a href="#">Bait & Float</a></li>
+                <li><a href="#">Etc equip</a></li>
+            </ul>
+        </nav>
+        <ul>
+            <li>
+                <a href="#">로그인</a>
+                <a href="#"><i class="fa fa-user"></i></a>
+            </li>
+            <li>
+                <a href="#">회원가입</a>
+                <a href="#"><i class="fa fa-lock"></i></a>
+            </li>
+        </ul>
+    </header><!-- #hd2 end-->
+    <div class="clear"></div>
+
+    <section>
+        <div class="RR banner">
+            <h2>Rod & Reel</h2>
+            <p>다양한 낚시대와 릴을 용도별로 만나보세요.</p>
+        </div>
+        <div class="sc-wrap">
+            <h3>상품 검색</h3>
+            <div class="equip-search">
+                <form name="search" action="" method="post">
+                    <div class="filter">
+                        <ul>
+                            <li>
+                                <h4><i class="fas fa-angle-double-right"></i>검색 필터</h4>
+                                <ul class="radio1">
+                                    <h5><i class="fas fa-angle-double-right"></i>상품 종류</h5>
+                                    <li>
+                                        <input type="radio" name="goods" id="freshwater" value="민물낚시대">
+                                        <label for="freshwater">민물낚시대</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="goods"  id="sea" value="바다낚시대">
+                                        <label for="sea">바다낚시대</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="goods" id="reel" value="릴">
+                                        <label for="reel">릴</label>
+                                    </li>
+                                </ul>
+                                <ul class="radio2">
+                                    <h5><i class="fas fa-angle-double-right"></i>상품 분류</h5>
+                                    <li>
+                                        <input type="radio" name="sort" id="newgoods" value="신상품">
+                                        <label for="newgoods">신상품순</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="sort" id="popgoods" value="인기상품">
+                                        <label for="popgoods">인기상품순</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="sort" id="highprice" value="높은가격순">
+                                        <label for="highprice">높은가격순</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" name="sort" id="lowprice" value="낮은가격순">
+                                        <label for="lowprice">낮은가격순</label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="search-box">
+                            <input type="text" name="search" class="search-text" placeholder="검색어 입력">
+                            <a href="#" class="search-btn"><i class="fa fa-search"></i></a>
+                        </div>
+                    </div>
+                </form>    
+            </div><!--equip-search end -->    
+            <div class="clear"></div>
+            
+            <h3>민물 낚시대</h3>
+            <div class="fw-rod">
+                <ul>
+                    <li>
+                        <div>
+                            <h3>제품명 1</h3>
+                            <p>초고밀도 하이카본으로 고탄성과 안정성을 동시에 잡은 제품</p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3>제품명 2</h3>
+                            <p>가볍고 밸런스가 뛰어나서 손맛을 느낄 수 있는 대물낚시에 적합한 제품</p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3>제품명 3</h3>
+                            <p>정확한 투척과 파워를 중심으로 설계되어 순간제압능력이 우수한 제품 </p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <h3>제품명 4</h3>
+                            <p>민물낚시에 요구되는 요소들을 모두 집약한 낚시대의 표본이 되는 제품</p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="more">
+                    <img src="imgs/fhd-more.jpg" alt="더보기버튼">
+                    <p>더보기</p>
+                </a>
+            </div><!-- fw-rod end -->
+
+            <h3>바다 낚시대</h3>
+            <div class="sea-rod">
+                <ul>
+                    <li>
+                        <div>
+                            <h3>제품명 1</h3>
+                            <p>40톤 초고탄성 카본 적용으로 제어력과 초경량화가 실현된 제품</p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <h3>제품명 2</h3>
+                            <p>줄걸림이 적고 초경량 릴시트를 탑재한 고탄성의 대중적인 제품</p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <h3>제품명 3</h3>
+                            <p>무결점 코팅방식으로 소재의 성능을 극대화시키고 저중심 설계로 장시간 낚시가 가능한 제품 </p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <h3>제품명 4</h3>
+                            <p>낚시 초보자들을 위한 편리하고 다양한 종류를 낚을 수 있는 입문용 제품 </p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="more">
+                    <img src="imgs/fhd-more.jpg" alt="더보기버튼">
+                    <p>더보기</p>
+                </a>
+            </div><!-- sea-rod end -->
+
+            <h3>릴</h3>
+            <div class="reel">
+                <ul>
+                    <li>
+                        <div>
+                            <h3>제품명 1</h3>
+                            <p>마찰저항을 줄여 더 나은 비거리 성능을 낼 수 있는 정밀성이 뛰어난 제품</p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h3>제품명 2</h3>
+                            <p>경량설계로 캐스트의 정확도를 높이고 조작성을 향상시켜 피로감을 줄여주는 제품</p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <h3>제품명 3</h3>
+                            <p>강력한 파워 핸들과 드라이브 기어를 탑재해 민물부터 바다까지 폭 넓게 사용가능한 제품</p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div>
+                            <h3>제품명 4</h3>
+                            <p>심플한 디자인에 알루미늄스풀을 적용하여 염분에 의한 부식을 최대한 방지한 제품</p>
+                            <a href="#">자세히보기</a>
+                        </div>
+                    </li>
+                </ul>
+                <a href="#" class="more">
+                    <img src="imgs/fhd-more.jpg" alt="더보기버튼">
+                    <p>더보기</p>
+                </a>
+            </div><!-- reel end -->
+        </div><!-- sc-wrap end -->        
+    </section><!-- section end -->    
+    <div class="clear"></div>
+
+    <footer id="sub-footer">
+        <div><img src="imgs/fhd-sub-logo3g.png" alt="푸터로고"></div>
+        <h4>About Us</h4>
+        <p>주소 : 광주광역시 북구 경양로 547-17 3층 <br>전화번호 : 062 - 1234 - 5678<br>copyright 2020 &copy; Feople'Space All right reserved</p>
+        <ul>
+            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+    </footer>
+</body>
+</html>
